@@ -651,7 +651,7 @@ Mode=LaTeX
 
 [item:Software_Testing_Glossary_(Alexei_Lupan).tex]
 archive=true
-column=31
+column=16
 encoding=UTF-8
 highlight=LaTeX
 line=0
@@ -1546,14 +1546,14 @@ encoding=UTF-8
 highlight=LaTeX
 line=17
 mode=LaTeX
-open=true
+open=false
 order=1
 
 [view-settings,view=0,item:Software_Testing_Glossary_(Alexei_Lupan).tex]
-CursorColumn=31
+CursorColumn=16
 CursorLine=0
 JumpList=
-ViMarks=.,0,27,[,0,27,],0,27
+ViMarks=.,0,15,[,0,9,],0,15
 
 [view-settings,view=0,item:_abstract.tex]
 CursorColumn=54
