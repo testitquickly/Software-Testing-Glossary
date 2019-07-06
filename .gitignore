@@ -1,5 +1,3 @@
-testProject/
-Transcribation/
 howTo.tex
 *.*~
 *.backup
@@ -7,12 +5,11 @@ howTo.tex
 *.ind
 *.aux
 *.glo
-*.glsdefs
+*.gls
 *.idx
 *.log
 *.xdy
 *.glg
-*.gls
 *.out
 *.toc
 *.dvi
@@ -21,4 +18,6 @@ howTo.tex
 *.blg
 *.ps
 *kate-swp
-/main.pdf
+/my_scripts/buildPdfLaTeXWithMetafilesOutside.sh
+/my_scripts/clearProjectFiles.sh
+/my_scripts/makeGlossaryAndIndex.sh
