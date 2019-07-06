@@ -1,0 +1,83 @@
+\section{Equivalence Class Testing}
+\label{sec:Equivalence Class Testing}
+
+\begin{quote}
+\index{Equivalence Class Testing}This should be called \textbf{Equivalence partitioning of test cases}, but nobody cares.\end{quote} 
+
+Don't pretend that this technique can be used to reduce the number of test cases without lowering the test coverage, because reducing test cases always lower the test coverage level. Automobiles was created for consuming petrol or for carrying human beings from the maternity hospital to the cemetery as fast as possible?
+
+\subsection{Class}
+
+A \index{Class}class is a group of some items with some common attributes, characteristics, qualities, or traits. 
+
+Grouping is useful for science, it helps to discuss as single entities whole classes, not separate items.
+
+Trick is that \emph{one item} can inherit different characteristics and qualities  \emph{at the same time}. For example, an usual \emph{man} can be added to several groups (classes) simultaneously: 
+
+\begin{itemize}
+ \item 
+ human being
+ \item 
+ bus driver
+ \item 
+ pig
+ \item 
+ father
+\end{itemize}
+
+\subsection{Equivalence}
+
+There are a lot of terms for showing that two items are equal: equal, comparable, identical, correspondent, duplicate, matched, uniform.
+
+Any two things can be called equal, if they have the exactly same attributes. 
+
+\begin{quote}
+ 
+\textbf{Example}: you have two brand new bottles of \index{Whiskey}whiskey. 
+
+They exists apart in this Universe, but now they are identical, equal, the same, they duplicate each other.
+
+If you will open one bottle, they immediately will become unequal (one is opened, the other is sealed).
+
+But once both bottles are opened, they again become equal.
+\end{quote}
+
+Ok, this bottles cannot be called 'equal' for real. But they can be declared as 'equal' only for our convenience.
+
+There is an \emph{meta} word for such statement: this two bottles are not equal (identical), but for the final result you can act with them like they ARE identical. This is called \emph{Equivalence}.
+
+\begin{quote}
+ 
+\textbf{Other example}: you should use a passenger train for travel in \index{Metro train}metro. Will matter what kind of train you will have to use? His color, capacity, length, personal number and the manufacturing year, or something like that?
+
+No! All those DIFFERENT trains from your route WILL BE equivalent one to others, while your journey.
+
+If you will use one of thousand trains, you can assume, that all other trains can complete the same task.
+
+Again, all those trains are not equal one to others. Each of them has his own number, different colors, different history and brake conditions, they was released in different ages. They are not equal, they are only equivalent.
+\end{quote}
+
+Warning! Equivalence is not a substitution or something totally equal. 'Equivalence' is not 'Equality'.
+
+
+\subsection{Equivalence partitioning of test cases}
+
+An equivalence class \emph{can} consists from a set of data that is treated the same by the module or that should produce the same result. Any data value within a class is equivalent, in terms of testing, to any other value. Specifically, we would expect that if one \index{Test Case}test case in an equivalence class detects a defect, all other test cases in the same equivalence class are likely to detect the same defect.
+
+A group of tests forms an equivalence class if you \emph{believe} that:
+
+\begin{itemize}
+\item 
+They all test the same thing.
+\item 
+If one test catches a bug, the others probably will too.
+\item 
+If one test doesn't catch a bug, the others probably won't either.\end{itemize}
+
+This approach assumes, of course, that a specification exists that defines the various equivalence classes to be tested. 
+
+And you should clearly understand, that your 'grouping' of test cases can be formally good, but totally wrong.
+
+The \textbf{main gap}: for example, you get your car from the car service, and the mechanic says: <<\textit{We had to check all the wheels. Well, we checked only two wheels with brakes. You know, they're all four are equivalent to each other, so we have checked out those two, they are ok, so we \emph{assume} that the remaining wheels are ok too. Have a nice day}>>. Will you have a nice day?
+
+Divide into equivalence classes only \index{Test Case}Test cases, not the \index{Functionality}Functionality of a product.

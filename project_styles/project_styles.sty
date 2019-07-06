@@ -1,0 +1,69 @@
+% ========== ОСНОВНЫЕ НАСТРОЙКИ ДОКУМЕНТА ==========
+
+% кодировка по-умолчанию.
+% ВНИМАНИЕ, параметр {inputenc} должен использоваться в документе только один раз
+\RequirePackage[utf8x]{inputenc}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{pxfonts}
+
+% ========== НАСТРОЙКИ АБЗАЦЕВ ==========
+
+% To get a straight right margin in the output, LaTeX inserts varying amounts of space between the words. By default, it also inserts slightly more space at the end of a sentence. However, the extra space added at the end of sentences is generally considered typographically old-fashioned in English language printing. The additional space after periods can be disabled with the command
+\frenchspacing
+
+% Возможность выводить каждый \section с новой страницы
+\usepackage{titlesec}
+\newcommand{\sectionbreak}{\clearpage}
+
+% убираем отступ для красной строки в абзаце
+\parindent=0em
+
+% принудительно увеличенный интервал между абзацами.
+\parskip=0.4em
+
+% принудительно увеличенный интервал между строчками, чтобы повысить читаемость, бо сливались
+\renewcommand{\baselinestretch}{1.2}
+
+% Непонятно что, но `для лучшего выравнивания текста`
+\sloppy
+
+% ========== НАСТРОЙКИ ОСНОВНЫХ СВОЙСТВ ДОКУМЕНТА ==========
+
+\title{\Huge{Software Testing Glossary}}
+
+\author{{\textbf{Alex\'ei Lup\'an}}}
+
+% ========== НАСТРОЙКИ ИНДЕКСА ТЕРМИНОВ ==========
+
+\usepackage{makeidx}
+
+% ========== НАСТРОЙКИ КАРТИНОК ==========
+
+\usepackage{graphicx}
+% Возможность конвертировать eps картинки в pdf
+
+\usepackage{epstopdf}
+\DeclareGraphicsExtensions{.jpg,.gif,.png,.eps,.pdf}
+
+\usepackage{wrapfig}
+% Возможность выравнивать картинки (обтекание текстом)
+
+% Указал место, где находятся все картинки проекта
+\graphicspath{{images/}}
+
+% ========== НАСТРОЙКИ ОСТАЛЬНЫХ СВОЙСТВ ДОКУМЕНТА ==========
+
+% ужимаем готовый pdf
+\pdfcompresslevel=5
+
+% чтобы работал поиск по PDF
+\usepackage{cmap} 
+
+% you have to put \usepackage[pdftex]{hyperref} 
+% as the last command into the preamble of your document.
+% Параметр colorlinks=true убирает рамки вокруг ссылок, превращая ссылки в окрашенный текст. Догадаться о том, что его надо перевести в режим true, блять, невозможно.
+\usepackage[pdftex,colorlinks=true]{hyperref}
+
+\usepackage{todo}

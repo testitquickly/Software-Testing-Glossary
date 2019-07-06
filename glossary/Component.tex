@@ -1,0 +1,21 @@
+\section{Component Testing}
+\label{sec:Component Testing}
+
+\index{Component Testing}A \textbf{Component} is an abstract common term. We suppose here any minimal software item that can be tested in isolation, without interaction with any other software items.
+
+\begin{quote}
+E.g., user only can create new profile, but all other functions like setup user avatar or name are unavailable (or are not tested for some reason). The user profile is just a Component from the System point of view, and inside of this Component the ability to add an avatar is just a Component too.
+
+Your finger is a component of your hand. And your hand is a component of your body. And your body is a component of your country. 
+
+Any complex System can be just a component of any other System.\end{quote} 
+
+\textbf{Component Testing} is aimed at verification of the correct work of \textbf{individual} software components, such as specific functional areas or/and features (or sub-features) without ensure that any other components works as expected.
+
+It may include the \index{Function Testing}functional testing, as well as testing of designs and content of the features or/and functional areas.
+
+The \textbf{strong side} of this approach is obvious — the component can be tested from A to Z.
+
+Common \textbf{weakness} of this approach: apart some components can work as expected, but then they are engaged in a system, they can interfere with other components and some unexpected defects may appear. That's why only component testing will never be enough.
+
+Usually internet shops are deployed as a bunch of components, which are already integrated. This means, that a clear isolation of some Components for testing purposes cannot be achieved. That's fine, because we always provide our shops packed with all amount of functionality.

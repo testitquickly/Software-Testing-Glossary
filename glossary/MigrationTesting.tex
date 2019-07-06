@@ -1,0 +1,25 @@
+\section{Migration Testing}
+\label{sec:Migration Testing}
+
+\index{Migration Testing}Consider that a company switch from one DBMS to another (from MySQL to Oracle). Or the architecture of DB requires a massive innovation. Then will be required a database Migration testing.
+
+Database migration may be done manually, but it is more common to use an automated ETL (Extract-Transform-Load) process to move the data.
+
+Database migration testing may encounter problems when:
+\begin{enumerate}
+ \item The data in the source database(s) changes during the test;
+ \item Some of the source data is corrupt;
+ \item The mappings between the tables/ fields of the source databases(s) and target database are changed by the database development/ migration team;
+ \item A part of the data from the source database is rejected by the target database;
+ \item Data migration takes too long because the database migration process is too slow or the source data file is too large.
+ \end{enumerate}
+ 
+ The test approach for database migration testing consists of the following activities:
+ 
+\begin{enumerate}
+ \item  
+ Design the validation tests. In order to test database migration, SQL queries are created either by hand or using a tool, such as a query creator. The test queries should contain logging statements for the purpose of effective analysis and bug reporting after the tests are complete.
+ \item Set up the test environment. The test environment should contain a copy of the source database, the ETL tool (if applicable) and a clean copy of the target database. The test environment should be isolated so that it is not changed externally during the tests.
+ \item Run your validation tests Depending on the test design, the database migration process does not need to completely finish before starting tests.
+ \item Report the bugs.
+ \end{enumerate}

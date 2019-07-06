@@ -1,0 +1,68 @@
+\section{Defect}
+\label{sec:Defect}
+
+\index{Defect}A flaw in a component or system that can cause the component or system to fail to perform its required function, e.g. an incorrect statement or data definition.
+
+Usually we name it \index{Bug}Bug [p.\pageref{sec:Bug}].
+
+\subsection{Defect Management}
+\label{sec:Defect Management}
+
+This is a process of
+
+\begin{itemize}
+\item 
+    recognizing,
+\item 
+investigating,
+\item 
+taking action
+\item 
+and disposing of defects.                             \end{itemize}
+
+It involves recording defects, classifying them and identifying the impact on the project or tested application.
+
+\subsection{Defect Report}
+\label{sec:Defect Report}
+
+A document (an item in \index{Jira}Jira) reporting on any flaw in a component or system that can cause the component or system to fail to perform its required function.
+
+\subsection{Priority and Severity}
+\label{sec:Priority and Severity}
+
+Consider the impact of Defect at the whole system. 
+
+And here is two terms for this classification: 
+
+\subsubsection{Severity}
+\label{sec:Severity}
+
+\begin{description}
+\item[Critical] — such severity is assigned when you lose the ability to work with the System because a Bug happens. You have lose information, or the Product cannot do his main task, or the Device is reset because of overloading... Almost every Bug at Checkout is Critical :)
+
+\item[Major] – well, you can somehow continue to work, or you can switch to another task, but the system is seriously affected by this Bug.
+
+\item[Minor] – bug is available, but it does not adversely affect the Product functionality.                                                                                     \end{description}
+
+Who is charged with authority to set the Severity? 
+
+First of all — the tester, who had discovered the Bug. 
+
+Second — the team lead. 
+
+Or the Manager. 
+
+Or the Client itself.
+
+\subsubsection{Priority}
+\label{sec:Priority}
+
+The level of business importance assigned to an item, e.g. defect.
+
+For example, on our site user can buy some cool stuff, and on the checkout the field 'Provide your credit card info' is missed. This is a Critical bug with High priority.
+
+Or on our site user can buy some cool stuff, and on the checkout the field 'Provide your credit card info' is available, but is named 'Provide your credit card info hzhzhzhzhzh'. This is a Major bug with High priority.
+
+Or on our site user can buy some cool stuff, and on the checkout the field 'Provide your credit card info' is available, but is named 'Provide your credit card' instead of 'Provide your credit card info'. This is a Minor bug with High priority.
+
+Or on our site user can buy some cool stuff, and they can download our worldwide stores list, but the file is missed on the file server. This is a Major bug with Minor priority. Yes, this is a bug, it is important, but we will fix it when we will have enough time. Forget about it\ldots
