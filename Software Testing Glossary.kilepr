@@ -661,10 +661,10 @@ order=-1
 
 [item:Software_Testing_Glossary_(Alexei_Lupan).tex]
 archive=true
-column=27
+column=15
 encoding=UTF-8
 highlight=LaTeX
-line=2
+line=0
 mode=LaTeX
 open=true
 order=0
@@ -711,12 +711,12 @@ order=-1
 
 [item:glossary/AdhocTesting.tex]
 archive=true
-column=46
+column=0
 encoding=UTF-8
 highlight=LaTeX
-line=5
+line=0
 mode=LaTeX
-open=true
+open=false
 order=1
 
 [item:glossary/AgileSoftwareDevelopment.tex]
@@ -1556,10 +1556,10 @@ JumpList=
 ViMarks=.,17,0,[,17,0,],17,0
 
 [view-settings,view=0,item:Software_Testing_Glossary_(Alexei_Lupan).tex]
-CursorColumn=27
-CursorLine=2
+CursorColumn=15
+CursorLine=0
 JumpList=
-ViMarks=.,2,0,[,2,0,],2,0
+ViMarks=.,0,6,[,0,2,],0,6
 
 [view-settings,view=0,item:_abstract.tex]
 CursorColumn=54
