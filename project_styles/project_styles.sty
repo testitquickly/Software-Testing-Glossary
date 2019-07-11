@@ -8,14 +8,28 @@
 \usepackage{textcomp}
 \usepackage{pxfonts}
 
+% ========== НАСТРОЙКИ ЗАГОЛОВКОВ ==========
+
+% Сделал линию под каждым section & subsection
+\usepackage{titlesec}
+
+	\titleformat{\section}
+	{\normalfont\Large\bfseries}{\thesection)}{1em}{}[{\titlerule[0.1pt]}]
+
+	\titleformat{\subsection}
+	{\normalfont\Large\bfseries}{\thesubsection)}{1em}{}[{\titlerule[0.1pt]}]
+
+	\titleformat{\subsubsection}
+	{\normalfont\Large\bfseries}{\thesubsubsection)}{1em}{}[{\titlerule[0.1pt]}]
+
+	% Возможность выводить каждый \section с новой страницы
+	% \usepackage{titlesec}
+	% \newcommand{\sectionbreak}{\clearpage}
+
 % ========== НАСТРОЙКИ АБЗАЦЕВ ==========
 
 % To get a straight right margin in the output, LaTeX inserts varying amounts of space between the words. By default, it also inserts slightly more space at the end of a sentence. However, the extra space added at the end of sentences is generally considered typographically old-fashioned in English language printing. The additional space after periods can be disabled with the command
 \frenchspacing
-
-% Возможность выводить каждый \section с новой страницы
-\usepackage{titlesec}
-% \newcommand{\sectionbreak}{\clearpage}
 
 % убираем отступ для красной строки в абзаце
 \parindent=0em
@@ -29,11 +43,23 @@
 % Непонятно что, но `для лучшего выравнивания текста`
 \sloppy
 
+% Перечеркивание текста — \sout{Hello world}
+% Обязательна опция [normalem], иначе ulem превратит ВСЕ \emph{} в простой подчеркнутый текст
+\usepackage[normalem]{ulem}
+
 % ========== НАСТРОЙКИ ОСНОВНЫХ СВОЙСТВ ДОКУМЕНТА ==========
 
 \title{\Huge{Software Testing Glossary}}
 
 \author{{\textbf{Alex\'ei Lup\'an}}}
+
+% Управление расстоянием между строками в tableofcontents
+\usepackage{tocloft}
+ 
+\setlength\cftparskip{-1pt}
+\setlength\cftbeforesecskip{1pt}
+	% change the vertical spacing between the title "Table of Contents" and the first entry
+\setlength\cftaftertoctitleskip{15pt}
 
 % ========== НАСТРОЙКИ ИНДЕКСА ТЕРМИНОВ ==========
 
@@ -41,17 +67,14 @@
 
 % ========== НАСТРОЙКИ КАРТИНОК ==========
 
-\usepackage{graphicx}
 % Возможность конвертировать eps картинки в pdf
+\usepackage{graphicx}
 
+% a Perl script that con­verts an EPS file to an ‘en­cap­su­lated’ PDF file (a sin­gle page file whose me­dia box is the same as the orig­i­nal EPS’s bound­ing box). The re­sult­ing file suit­able for in­clu­sion by pdfTeX as an im­age.
 \usepackage{epstopdf}
-\DeclareGraphicsExtensions{.jpg,.gif,.png,.eps,.pdf}
 
-\usepackage{wrapfig}
 % Возможность выравнивать картинки (обтекание текстом)
-
-% Указал место, где находятся все картинки проекта
-\graphicspath{{images/}}
+\usepackage{wrapfig}
 
 % ========== НАСТРОЙКИ ОСТАЛЬНЫХ СВОЙСТВ ДОКУМЕНТА ==========
 
