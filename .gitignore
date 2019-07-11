@@ -22,3 +22,4 @@ howTo.tex
 *.ps
 *kate-swp
 /main.pdf
+*.synctex.gz
