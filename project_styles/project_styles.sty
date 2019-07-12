@@ -4,14 +4,12 @@
 % ВНИМАНИЕ, параметр {inputenc} должен использоваться в документе только один раз
 \RequirePackage[utf8]{inputenc}
 \usepackage{lmodern}
-\usepackage{textcomp}
 \usepackage{pxfonts}
 \usepackage[T1]{fontenc}
 
 % Выбор шрифта
 \usepackage{plex-serif}
 \usepackage[sfdefault]{plex-sans}
-
 
 % ========== НАСТРОЙКИ ЗАГОЛОВКОВ ==========
 
@@ -33,12 +31,31 @@
 % принудительно увеличенный интервал между строчками, чтобы повысить читаемость, бо сливались
 \renewcommand{\baselinestretch}{1.2}
 
-% Непонятно что, но `для лучшего выравнивания текста`
+% принудительно увеличенный интервал между абзацами
+\setlength{\parskip}{1em}
+
+% Непонятно что, но "для лучшего выравнивания текста"
 \sloppy
 
 % Перечеркивание текста — \sout{Hello world}
 % Обязательна опция [normalem], иначе ulem превратит ВСЕ \emph{} в простой подчеркнутый текст
 \usepackage[normalem]{ulem}
+
+% ========== СОБСТВЕННЫЕ СТИЛИ ==========
+
+\usepackage{textcomp}
+
+% Решение заебучего отсутствия пробела после закрывающей французской кавычки: текст, который надо взять в кавычки, берем в \russianq{}
+\newcommand{\russianq}[1]{\guillemotleft{#1}\guillemotright}
+
+% Обрамление текста ординарными, идеально ровными кавычками (зависят от \usepackage{textcomp})
+\newcommand{\ordinaryq}[1]{\textquotesingle {#1}\textquotesingle}
+
+% Обрамление текста английскими кавычками (зависят от \usepackage{textcomp})
+\newcommand{\englishq}[1]{``{#1}''}
+
+% Обрамление текста квадратными скобками
+\newcommand{\squaredBrackets}[1]{\lbrack{#1}\rbrack}
 
 % ========== НАСТРОЙКИ ОСНОВНЫХ СВОЙСТВ ДОКУМЕНТА ==========
 
