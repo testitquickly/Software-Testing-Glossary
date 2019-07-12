@@ -20,4 +20,4 @@ howTo.tex
 *.ps
 *kate-swp
 *.gz
-
+*.gui
