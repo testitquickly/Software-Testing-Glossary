@@ -1,3 +1,4 @@
+my_scripts/
 howTo.tex
 *.*~
 *.backup
@@ -18,7 +19,5 @@ howTo.tex
 *.blg
 *.ps
 *kate-swp
-/my_scripts/buildPdfLaTeXWithMetafilesOutside.sh
-/my_scripts/clearProjectFiles.sh
-/my_scripts/makeGlossaryAndIndex.sh
-/Software_Testing_Glossary_(Alexei_Lupan).synctex.gz
+*.gz
+
