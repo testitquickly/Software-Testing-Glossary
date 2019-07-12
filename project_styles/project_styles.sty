@@ -1,19 +1,16 @@
+% PRINT VERSION
+
 % ========== ОСНОВНЫЕ НАСТРОЙКИ ДОКУМЕНТА ==========
+
+% От этого зависят правильные переносы в словах.
+\usepackage[english]{babel}
 
 % кодировка по-умолчанию.
 % ВНИМАНИЕ, параметр {inputenc} должен использоваться в документе только один раз
-\RequirePackage[utf8x]{inputenc}
+\RequirePackage[utf8]{inputenc}
 \usepackage{lmodern}
 \usepackage[T1]{fontenc}
-\usepackage{textcomp}
 \usepackage{pxfonts}
-
-% ========== НАСТРОЙКИ РАЗМЕРА СТРАНИЦ ==========
-
-% Установил более широкое поле для текста, нежели для обычной книги
-% Вместо inchi (дюймы) можно использовать cm (сантиметры)
-% \usepackage[a4paper, total={6in, 8in}]{geometry}
-\usepackage[left=2.5cm, right=2.5cm]{geometry}
 
 % ========== НАСТРОЙКИ ЗАГОЛОВКОВ ==========
 
@@ -29,7 +26,7 @@
 	\titleformat{\subsubsection}
 	{\normalfont\Large\bfseries}{\thesubsubsection)}{1em}{}[{\titlerule[0.1pt]}]
 
-	% Возможность выводить каждый \section с новой страницы
+	% Задушил возможность выводить каждый \section с новой страницы
 	% \usepackage{titlesec}
 	% \newcommand{\sectionbreak}{\clearpage}
 
@@ -53,6 +50,22 @@
 % Перечеркивание текста — \sout{Hello world}
 % Обязательна опция [normalem], иначе ulem превратит ВСЕ \emph{} в простой подчеркнутый текст
 \usepackage[normalem]{ulem}
+
+% ========== СОБСТВЕННЫЕ СТИЛИ ==========
+
+\usepackage{textcomp}
+
+% Решение заебучего отсутствия пробела после закрывающей французской кавычки: текст, который надо взять в кавычки, берем в \russianq{}
+\newcommand{\russianq}[1]{\guillemotleft{#1}\guillemotright}
+
+% Обрамление текста ординарными, идеально ровными кавычками (зависят от \usepackage{textcomp})
+\newcommand{\ordinaryq}[1]{\textquotesingle {#1}\textquotesingle}
+
+% Обрамление текста английскими кавычками (зависят от \usepackage{textcomp})
+\newcommand{\englishq}[1]{``{#1}''}
+
+% Обрамление текста квадратными скобками
+\newcommand{\squaredBrackets}[1]{\lbrack{#1}\rbrack}
 
 % ========== НАСТРОЙКИ ОСНОВНЫХ СВОЙСТВ ДОКУМЕНТА ==========
 
@@ -82,6 +95,13 @@
 
 % Возможность выравнивать картинки (обтекание текстом)
 \usepackage{wrapfig}
+
+% ========== НАСТРОЙКИ РАЗМЕРА СТРАНИЦ ==========
+
+% Установил более широкое поле для текста, нежели для обычной книги
+% Вместо inchi (дюймы) можно использовать cm (сантиметры)
+% \usepackage[a4paper, total={6in, 8in}]{geometry}
+\usepackage[left=2.5cm, right=2.5cm]{geometry}
 
 % ========== НАСТРОЙКИ ОСТАЛЬНЫХ СВОЙСТВ ДОКУМЕНТА ==========
 
