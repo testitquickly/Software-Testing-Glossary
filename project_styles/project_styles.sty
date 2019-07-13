@@ -78,7 +78,32 @@
 
 % ========== НАСТРОЙКИ ИНДЕКСА ТЕРМИНОВ ==========
 
-\usepackage{makeidx}
+\usepackage{imakeidx} % Normal LaTeX indexing
+
+% Уменьшил размер всех вхождений в индекс (шрифт чуть меньше общего)
+\indexsetup{othercode=\small}
+
+% включил возможность создания индекса терминов.
+\makeindex[
+% program=makeindex,
+title=Index,
+program=xindy,
+columns=1, % можно =2 для двух колонок, но могут возникнуть сложности с переносами.
+columnseprule=true,
+noautomatic=false,
+intoc=true, % "Предметный указатель" отражается в общем содержимом документа.
+options=-C utf8 -s project_styles/index_style.ist]
+% options={-s index_style.ist -C utf8 -M multilingual.xdy}]
+
+% https://tex.stackexchange.com/questions/8351/what-do-makeatletter-and-makeatother-do
+	\makeatletter
+		% Все индексовые вхождения писать только так: \rindex{\textbf{W}!Web}
+		% Тогда они будут аккуратно обрабатываться и сортироваться сперва по английскому, а затем по русскому алфавиту.
+		\newcommand{\rindex}[2][\imki@jobname]{\index[#1]{\detokenize{#2}}}
+
+		% Выравниванием термины в колонках по левому краю
+		\def\@idxitem{\par\hangindent 0pt}
+	\makeatother
 
 % ========== НАСТРОЙКИ КАРТИНОК ==========
 
