@@ -24,6 +24,6 @@ echo -e "\nList of removed files: \n"
             # которые не заканчиваются на указаные расширения, и файлы 
             # в глубоких суб-суб-каталогах.
 
-find ../ -not -path "../.git/*" -regex '.*\.\(aux\|backup\|bib~\|dvi\|gitignore~\|glg\|glo\|glo\|gls\|idx\|log\|out\|plt\|ps\|sh~\|sty~\|tex~\|gz\|xdy\)' -print -delete
+find ../ -not -path "../.git/*" -regex '.*\.\(aux\|backup\|bib~\|dvi\|gitignore~\|glg\|glo\|glo\|gls\|idx\|ind\|ilg\|log\|out\|plt\|ps\|sh~\|sty~\|tex~\|toc\||gz\|xdy\)' -print -delete
 
 echo -e "\n= = = = DONE \n"
