@@ -12,13 +12,13 @@
 \usepackage{pxfonts}
 \usepackage[T1]{fontenc}
 
-% Выбор шрифта
+% Выбор шрифта IBM Plex
 \usepackage{plex-serif}
 \usepackage[sfdefault]{plex-sans}
 
 % ========== НАСТРОЙКИ ЗАГОЛОВКОВ ==========
 
-% Сделал возможность выводить каждый \section с новой страницы
+% Выводим каждый \section с новой страницы
 \usepackage{titlesec}
 \newcommand{\sectionbreak}{\clearpage}
 
@@ -70,7 +70,6 @@
 
 % Управление расстоянием между строками в tableofcontents
 \usepackage{tocloft}
- 
 \setlength\cftparskip{-1pt}
 \setlength\cftbeforesecskip{1pt}
 	% change the vertical spacing between the title "Table of Contents" and the first entry
@@ -118,7 +117,7 @@ options=-C utf8 -s project_styles/index_style.ist]
 
 % ========== НАСТРОЙКИ РАЗМЕРА СТРАНИЦ ==========
 
-% Установил более широкое поле для текста, нежели для обычной книги
+% Можно установить более широкие поля для текста.
 % Вместо inchi (дюймы) можно использовать cm (сантиметры) или em
 	% Вариант: \usepackage[a4paper, total={6in, 8in}]{geometry}
 % Оставил нативные настройки полей.

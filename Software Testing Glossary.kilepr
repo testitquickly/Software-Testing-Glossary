@@ -23,15 +23,10 @@ QuickBuild=
 
 [item:Software_Testing_Glossary_(Alexei_Lupan).tex]
 archive=true
-<<<<<<< HEAD
-encoding=UTF-8
-highlight=LaTeX
-=======
 column=15
 encoding=UTF-8
 highlight=LaTeX
 line=0
->>>>>>> 7a64689765c8fce13f87f435f6a2ecbabbed4c9a
 mode=LaTeX
 
 [item:_abstract.tex]
@@ -60,11 +55,6 @@ mode=LaTeX
 
 [item:glossary/AdhocTesting.tex]
 archive=true
-<<<<<<< HEAD
-encoding=UTF-8
-highlight=LaTeX
-mode=LaTeX
-=======
 column=0
 encoding=UTF-8
 highlight=LaTeX
@@ -72,7 +62,6 @@ line=0
 mode=LaTeX
 open=false
 order=1
->>>>>>> 7a64689765c8fce13f87f435f6a2ecbabbed4c9a
 
 [item:glossary/AgileSoftwareDevelopment.tex]
 archive=true
@@ -568,24 +557,15 @@ mode=LaTeX
 
 [item:glossary/WhiteBoxBlackBox.tex]
 archive=true
-<<<<<<< HEAD
 encoding=UTF-8
 highlight=LaTeX
 mode=LaTeX
 
-[item:project_styles/project_styles.sty]
+[item:project_styles/project_styles_screen_version.sty]
 archive=true
 encoding=UTF-8
 highlight=LaTeX
 mode=LaTeX
-=======
-column=46
-encoding=UTF-8
-highlight=LaTeX
-line=27
-mode=LaTeX
-open=false
-order=-1
 
 [view-settings,view=0,item:ProjectStyle.sty]
 CursorColumn=0
@@ -1126,4 +1106,3 @@ CursorColumn=46
 CursorLine=27
 JumpList=
 ViMarks=.,11,118,[,11,118,],11,129
->>>>>>> 7a64689765c8fce13f87f435f6a2ecbabbed4c9a
