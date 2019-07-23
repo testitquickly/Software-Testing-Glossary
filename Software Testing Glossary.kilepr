@@ -21,12 +21,6 @@ options='%S.idx'
 MakeIndex=Default
 QuickBuild=
 
-[item:Software_Testing_Glossary_(Alexei_Lupan).tex]
-archive=true
-encoding=UTF-8
-highlight=LaTeX
-mode=LaTeX
-
 [item:_abstract.tex]
 archive=true
 encoding=UTF-8
@@ -550,6 +544,12 @@ highlight=LaTeX
 mode=LaTeX
 
 [item:glossary/WhiteBoxBlackBox.tex]
+archive=true
+encoding=UTF-8
+highlight=LaTeX
+mode=LaTeX
+
+[item:main.tex]
 archive=true
 encoding=UTF-8
 highlight=LaTeX
