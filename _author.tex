@@ -1,0 +1,45 @@
+\section*{About author}
+\label{sec:About author}
+
+\begingroup
+
+% The spacing around the wrapfigure is given by two lengths: 
+	
+	
+% The default for \columnsep is 10pt, while \intextsep is 12.0pt plus 2.0pt minus 2.0pt. The following is taken from the wrapfig documentation http://mirrors.ctan.org/macros/latex/contrib/wrapfig/wrapfig-doc.pdf (section 2 Sizing and optional overhang, p 3):
+
+% \intextsep (for vertical padding). 
+\setlength{\intextsep}{-0.3em}
+% \columnsep (for horizontal padding)
+\setlength{\columnsep}{3em}
+
+% 10 = это количество строк, которые занимает картинка.
+	% Если картинка мелкая, то много строк не нужно. 
+	% Если картинка крупная, то при малом параметре строки будут налезать на картинку снизу. 
+\begin{wrapfigure}[5]{r}{0.5\linewidth}
+  \centering\includegraphics[width=1\linewidth]{alexei_lupan}
+\end{wrapfigure}
+
+{\Large Alexei Lupan}\\
+QA analyst
+
+% Увеличил отступ строк от левого края
+\setlength{\leftskip}{0.6em}
+
+Interested in \mbox{test design} issues, 
+
+and organization and providing full advanced trainings for new QA stuff.
+
+Happy with baritone guitars and Robert Heinlein's books.                                                                                                                                                                                                    
+
+% Убрал отступ строк от левого края
+\setlength{\leftskip}{0em}
+
+\textbf{LinkedIn}:\\
+\href{https://www.linkedin.com/in/testitquickly/}{testitquickly}
+
+\textbf{Personal Website}:\\
+\href{https://testitquickly.com/}{testitquickly.com}
+
+% Завершение участка, в котором разруливается картинка
+\endgroup
