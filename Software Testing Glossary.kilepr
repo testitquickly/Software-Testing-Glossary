@@ -27,6 +27,12 @@ encoding=UTF-8
 highlight=LaTeX
 mode=LaTeX
 
+[item:_author.tex]
+archive=true
+encoding=UTF-8
+highlight=LaTeX
+mode=LaTeX
+
 [item:glossary/AcceptanceCriteria.tex]
 archive=true
 encoding=UTF-8
