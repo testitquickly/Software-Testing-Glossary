@@ -2,7 +2,9 @@
 
 A damn simple definition dictionary from testitquickly.com
 
-See the „[Software Testing Glossary (Alexei Lupan).pdf](https://github.com/astenix/Software-Testing-Glossary/blob/master/Software%20Testing%20Glossary%20(Alexei%20Lupan).pdf)“ file.
+There are two versions of this doc with identical content:
+* [for screen](https://github.com/astenix/Software-Testing-Glossary/blob/master/Software%20Testing%20Glossary%20(Alexei%20Lupan).pdf)
+* [for print](https://github.com/astenix/Software-Testing-Glossary/blob/print_version/Software%20Testing%20Glossary%20(Alexei%20Lupan).pdf)
 
 ## Abstract
 This is not an another ’_Full glossary of terms used in Software Testing_’. I just had to notice my own definition dictionary of some terms, so I did it. 
