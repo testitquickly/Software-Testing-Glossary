@@ -28,14 +28,24 @@
 
 % ========== НАСТРОЙКИ АБЗАЦЕВ ==========
 
+% Improves the spacing between words and letters. It does a lot more and most people won’t notice the difference. The resulting document will be easier to read and looks better. Load this package after fonts, if any, as the package behavior is dependent on this font.
+\usepackage{microtype}
+
 % To get a straight right margin in the output, LaTeX inserts varying amounts of space between the words. By default, it also inserts slightly more space at the end of a sentence. However, the extra space added at the end of sentences is generally considered typographically old-fashioned in English language printing. The additional space after periods can be disabled with the command
 \frenchspacing
 
+% "русский" отступ для первого абзаца каждой главы
+	% В британской полиграфической традиции каждая следующая после заголовка раздела строка текста прописана без отступа.
+\usepackage{indentfirst}
+
 % убираем отступ для красной строки в абзаце
-\parindent=0em
+\parindent=1.5em
 
 % принудительно увеличенный интервал между абзацами.
-\parskip=0.4em
+% 0.5em для экранного текста.
+% 0em для печатного текста.
+\parskip=0.1em
+
 
 % принудительно увеличенный интервал между строчками, чтобы повысить читаемость, бо сливались
 \renewcommand{\baselinestretch}{1.2}
@@ -129,7 +139,7 @@ options=-C utf8 -s project_styles/index_style.ist]
 % ========== НАСТРОЙКИ GIT ==========
 
 % https://ctan.org/pkg/gitinfo2
-\usepackage{gitinfo2}
+% \usepackage{gitinfo2}
 
 % ========== НАСТРОЙКИ ОСТАЛЬНЫХ СВОЙСТВ ДОКУМЕНТА ==========
 
