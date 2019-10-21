@@ -3,8 +3,8 @@
 A damn simple definition dictionary from testitquickly.com
 
 There are two versions of this doc with identical content:
-* [for screen](https://github.com/astenix/Software-Testing-Glossary/raw/master/Software%20Testing%20Glossary%20(Alexei%20Lupan).pdf)
-* [for print](https://github.com/astenix/Software-Testing-Glossary/raw/print_version/Software%20Testing%20Glossary%20(Alexei%20Lupan).pdf)
+* [for screen](https://github.com/testitquickly/Software-Testing-Glossary/raw/master/Software%20Testing%20Glossary%20(Alexei%20Lupan).pdf)
+* [for print](https://github.com/testitquickly/Software-Testing-Glossary/raw/print_version/Software%20Testing%20Glossary%20(Alexei%20Lupan).pdf)
 
 ## Abstract
 This is not an another ’_Full glossary of terms used in Software Testing_’. I just had to notice my own definition dictionary of some terms, so I did it. 
@@ -19,7 +19,7 @@ Also you can:
 
 ## About author
 Alexei Lupan, QA analyst & trainer
-<img src="https://raw.githubusercontent.com/astenix/Software-Testing-Glossary/master/images/alexei_lupan.jpg" alt="Alexei Lupan" height="200" align="right" />
+<img src="https://raw.githubusercontent.com/testitquickly/Software-Testing-Glossary/master/images/alexei_lupan.jpg" alt="Alexei Lupan" height="200" align="right" />
 
 Interested in test design issues and organization and providing full advanced trainings for new QA stuff.
 
