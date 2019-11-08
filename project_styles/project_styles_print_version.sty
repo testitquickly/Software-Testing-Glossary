@@ -2,19 +2,21 @@
 
 % ========== ОСНОВНЫЕ НАСТРОЙКИ ДОКУМЕНТА ==========
 
-% От этого зависят правильные переносы в словах.
+	% От этого зависят правильные переносы в словах.
 \usepackage[english]{babel}
 
-% кодировка по-умолчанию.
-% ВНИМАНИЕ, параметр {inputenc} должен использоваться в документе только один раз
+	% кодировка по-умолчанию.
+	% ВНИМАНИЕ, параметр {inputenc} должен использоваться в документе только один раз
 \RequirePackage[utf8]{inputenc}
 \usepackage{lmodern}
 \usepackage[T1]{fontenc}
-\usepackage{pxfonts}
+% Шрифт документа - https://ru.wikipedia.org/wiki/Linux_Libertine
+\usepackage{libertine}
+% \usepackage{pxfonts}
 
 % ========== НАСТРОЙКИ ЗАГОЛОВКОВ ==========
 
-% Сделал линию под каждым section & subsection
+	% Сделал линию под каждым section & subsection
 \usepackage{titlesec}
 
 	\titleformat{\section}
@@ -28,49 +30,48 @@
 
 % ========== НАСТРОЙКИ АБЗАЦЕВ ==========
 
-% Improves the spacing between words and letters. It does a lot more and most people won’t notice the difference. The resulting document will be easier to read and looks better. Load this package after fonts, if any, as the package behavior is dependent on this font.
+	% Improves the spacing between words and letters. It does a lot more and most people won’t notice the difference. The resulting document will be easier to read and looks better. Load this package after fonts, if any, as the package behavior is dependent on this font.
 \usepackage{microtype}
 
-% To get a straight right margin in the output, LaTeX inserts varying amounts of space between the words. By default, it also inserts slightly more space at the end of a sentence. However, the extra space added at the end of sentences is generally considered typographically old-fashioned in English language printing. The additional space after periods can be disabled with the command
+	% To get a straight right margin in the output, LaTeX inserts varying amounts of space between the words. By default, it also inserts slightly more space at the end of a sentence. However, the extra space added at the end of sentences is generally considered typographically old-fashioned in English language printing. The additional space after periods can be disabled with the command
 \frenchspacing
 
-% "русский" отступ для первого абзаца каждой главы
+	% "русский" отступ для первого абзаца каждой главы
 	% В британской полиграфической традиции каждая следующая после заголовка раздела строка текста прописана без отступа.
 \usepackage{indentfirst}
 
-% убираем отступ для красной строки в абзаце
+	% убираем отступ для красной строки в абзаце
 \parindent=1.5em
 
-% принудительно увеличенный интервал между абзацами.
-% 0.5em для экранного текста.
-% 0em для печатного текста.
+	% принудительно увеличенный интервал между абзацами.
+	% 0.5em для экранного текста.
+	% 0.1em для печатного текста.
 \parskip=0.1em
 
-
-% принудительно увеличенный интервал между строчками, чтобы повысить читаемость, бо сливались
+	% принудительно увеличенный интервал между строчками, чтобы повысить читаемость, бо сливались
 \renewcommand{\baselinestretch}{1.2}
 
-% Непонятно что, но `для лучшего выравнивания текста`
+	% Непонятно что, но `для лучшего выравнивания текста`
 \sloppy
 
-% Перечеркивание текста — \sout{Hello world}
-% Обязательна опция [normalem], иначе ulem превратит ВСЕ \emph{} в простой подчеркнутый текст
+	% Перечеркивание текста — \sout{Hello world}
+	% Обязательна опция [normalem], иначе ulem превратит ВСЕ \emph{} в простой подчеркнутый текст
 \usepackage[normalem]{ulem}
 
 % ========== СОБСТВЕННЫЕ СТИЛИ ==========
 
 \usepackage{textcomp}
 
-% Решение заебучего отсутствия пробела после закрывающей французской кавычки: текст, который надо взять в кавычки, берем в \russianq{}
+	% Решение заебучего отсутствия пробела после закрывающей французской кавычки: текст, который надо взять в кавычки, берем в \russianq{}
 \newcommand{\russianq}[1]{\guillemotleft{#1}\guillemotright}
 
-% Обрамление текста ординарными, идеально ровными кавычками (зависят от \usepackage{textcomp})
+	% Обрамление текста ординарными, идеально ровными кавычками (зависят от \usepackage{textcomp})
 \newcommand{\ordinaryq}[1]{\textquotesingle {#1}\textquotesingle}
 
-% Обрамление текста английскими кавычками (зависят от \usepackage{textcomp})
+	% Обрамление текста английскими кавычками (зависят от \usepackage{textcomp})
 \newcommand{\englishq}[1]{``{#1}''}
 
-% Обрамление текста квадратными скобками
+	% Обрамление текста квадратными скобками
 \newcommand{\squaredBrackets}[1]{\lbrack{#1}\rbrack}
 
 % ========== НАСТРОЙКИ ОСНОВНЫХ СВОЙСТВ ДОКУМЕНТА ==========
@@ -79,7 +80,7 @@
 
 \author{{\textbf{Alex\'ei Lup\'an}}}
 
-% Управление расстоянием между строками в tableofcontents
+	% Управление расстоянием между строками в tableofcontents
 \usepackage{tocloft}
  
 \setlength\cftparskip{-1pt}
@@ -91,12 +92,12 @@
 
 \usepackage{imakeidx} % Normal LaTeX indexing
 
-% Уменьшил размер всех вхождений в индекс (шрифт чуть меньше общего)
+	% Уменьшил размер всех вхождений в индекс (шрифт чуть меньше общего)
 \indexsetup{othercode=\small}
 
-% включил возможность создания индекса терминов.
+	% включил возможность создания индекса терминов.
 \makeindex[
-% program=makeindex,
+	% program=makeindex,
 title=Index,
 program=xindy,
 columns=1, % можно =2 для двух колонок, но могут возникнуть сложности с переносами.
@@ -104,9 +105,9 @@ columnseprule=true,
 noautomatic=false,
 intoc=true, % "Предметный указатель" отражается в общем содержимом документа.
 options=-C utf8 -s project_styles/index_style.ist]
-% options={-s index_style.ist -C utf8 -M multilingual.xdy}]
+	% options={-s index_style.ist -C utf8 -M multilingual.xdy}]
 
-% https://tex.stackexchange.com/questions/8351/what-do-makeatletter-and-makeatother-do
+	% https://tex.stackexchange.com/questions/8351/what-do-makeatletter-and-makeatother-do
 	\makeatletter
 		% Все индексовые вхождения писать только так: \rindex{\textbf{W}!Web}
 		% Тогда они будут аккуратно обрабатываться и сортироваться сперва по английскому, а затем по русскому алфавиту.
@@ -118,40 +119,43 @@ options=-C utf8 -s project_styles/index_style.ist]
 
 % ========== НАСТРОЙКИ КАРТИНОК ==========
 
-% Также настройки картинок есть в главном файле проекта перед \begin{document}
+	% Также настройки картинок есть в главном файле проекта перед \begin{document}
 
-% Возможность конвертировать eps картинки в pdf
+	% Возможность конвертировать eps картинки в pdf
 \usepackage{graphicx}
 
-% a Perl script that con­verts an EPS file to an ‘en­cap­su­lated’ PDF file (a sin­gle page file whose me­dia box is the same as the orig­i­nal EPS’s bound­ing box). The re­sult­ing file suit­able for in­clu­sion by pdfTeX as an im­age.
+	% a Perl script that con­verts an EPS file to an ‘en­cap­su­lated’ PDF file (a sin­gle page file whose me­dia box is the same as the orig­i­nal EPS’s bound­ing box). The re­sult­ing file suit­able for in­clu­sion by pdfTeX as an im­age.
 \usepackage{epstopdf}
 
-% Возможность выравнивать картинки (обтекание текстом)
+	% Возможность выравнивать картинки (обтекание текстом)
 \usepackage{wrapfig}
+
+	% Возможность устанавливать рамки вокруг includegraphics.
+\usepackage[most]{tcolorbox}
 
 % ========== НАСТРОЙКИ РАЗМЕРА СТРАНИЦ ==========
 
-% Установил более широкое поле для текста, нежели для обычной книги
-% Вместо inchi (дюймы) можно использовать cm (сантиметры)
-% \usepackage[a4paper, total={6in, 8in}]{geometry}
+	% Установил более широкое поле для текста, нежели для обычной книги
+	% Вместо inchi (дюймы) можно использовать cm (сантиметры)
+	% \usepackage[a4paper, total={6in, 8in}]{geometry}
 \usepackage[left=2.5cm, right=2.5cm]{geometry}
 
 % ========== НАСТРОЙКИ GIT ==========
 
-% https://ctan.org/pkg/gitinfo2
-% \usepackage{gitinfo2}
+	% https://ctan.org/pkg/gitinfo2
+	% \usepackage{gitinfo2}
 
 % ========== НАСТРОЙКИ ОСТАЛЬНЫХ СВОЙСТВ ДОКУМЕНТА ==========
 
-% ужимаем готовый pdf
+	% ужимаем готовый pdf
 \pdfcompresslevel=5
 
 % чтобы работал поиск по PDF
 \usepackage{cmap} 
 
-% you have to put \usepackage[pdftex]{hyperref} 
-% as the last command into the preamble of your document.
-% Параметр colorlinks=true убирает рамки вокруг ссылок, превращая ссылки в окрашенный текст. Догадаться о том, что его надо перевести в режим true, блять, невозможно.
+	% you have to put \usepackage[pdftex]{hyperref} 
+	% as the last command into the preamble of your document.
+	% Параметр colorlinks=true убирает рамки вокруг ссылок, превращая ссылки в окрашенный текст. Догадаться о том, что его надо перевести в режим true, блять, невозможно.
 \usepackage[pdftex,colorlinks=true]{hyperref}
 
 \usepackage{todo}
