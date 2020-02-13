@@ -28,39 +28,40 @@ Availability testing is primarily concerned with measuring and minimizing the ac
 
 But before of all you should know several things:
 
-I. $Mean~Time~To~Failure$ (MTTF) 
+I. Mean~Time~To~Failure ($MTTF$) 
 
 \begin{quote}
 Is the time, on average, that you would expect a clock-work to fail when it has been running. It is a simple indicator of  clock-work \rindex{\textbf{R}!Reliability}reliability.
 
 Example: a clock-work runs for 500 hours. It breaks down 5 times during that period.
 
-$Mean~Time~To~Failure$ (MTTF) $=$ 500 $/$ 5 $=$ \textbf{100 hours}
+Mean~Time~To~Failure ($MTTF$) $=$ 500 $/$ 5 $=$ \textbf{100 hours}
 \end{quote} 
 
-II. $Mean~Time~Between~Failure$ (MTBF) 
+II. Mean~Time~Between~Failure ($MTBF$) 
 
 \begin{quote}
 Is the time, on average, that you would expect a clock-work to fail including time lost for repairs are undertaken. It is an indicator of the combined reliability and \rindex{\textbf{M}!Maintenance efficiency}maintenance effectiveness/efficiency.
 
 Example: a clock-work runs for 500 hours, and it has 200 hours downtime due to 5 failures.
 
-$Mean~Time~Between~Failure$ (MTBF) $=$ (500 $+$ 200) $/$ 5 $=$ \textbf{140 hours}                               \end{quote} 
+Mean~Time~Between~Failure ($MTBF$) $=$ (500 $+$ 200) $/$ 5 $=$ \textbf{140 hours}
+\end{quote} 
 
-III. $Mean~Time~To~Repair$ (MTTR) 
+III. Mean~Time~To~Repair ($MTTR$)
 
 \begin{quote}
 Is the time, on average, that you would expect a stoppage to last including time spent waiting for maintenance engineer, diagnosis, waiting for parts, actual repair and testing. 
 
 It is an indicator of maintenance effectiveness/efficiency. 
 
-Note that there is another indicator that can be used here, $Mean~Corrective~Repair~Time$ (MCRT). 
+Note that there is another indicator that can be used here, Mean~Corrective~Repair~Time ($MCRT$). 
 \begin{quote}
-$Mean~Corrective~Repair~Time$ is only interested in the actual repair time assuming all tools, spares and required manpower are available (efficiency).
+Mean~Corrective~Repair~Time is only interested in the actual repair time assuming all tools, spares and required manpower are available (efficiency).
 
-$Mean~Time~To~Repair$ (MTTR) $-$  $Mean~Corrective~Repair~Time$ (MCRT)  $=$  Waste and therefore gives you an indication of how ineffective your stores and maintenance resource strategy is.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        \end{quote} 
+Mean~Time~To~Repair ($MTTR$) $-$ Mean~Corrective~Repair~Time ($MCRT$)  $=$  Waste and therefore gives you an indication of how ineffective your stores and maintenance resource strategy is.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        \end{quote} 
 
-Notice that as MTTR trends towards zero, the percentage availability trends towards 100\%.
+Notice that as $MTTR$ trends towards zero, the percentage availability trends towards 100\%.
 
 \end{quote}
 
@@ -68,19 +69,19 @@ Still here? Ok, here is an example.
 
 As above, clock-work runs for 500 hours, has 200 hours downtime due to 5 failures.
 
-$Mean~Time~To~Repair$ (MTTR)  $=$  200  $/$  5  $=$  \textbf{40 hours}
+Mean~Time~To~Repair ($MTTR$)  $=$  200  $/$  5  $=$  \textbf{40 hours}
 
 Therefore: 
 
-$Mean~Time~To~Failure$ (MTTF)  $+$  $Mean~Time~To~Repair$ (MTTR) $=$  $Mean~Time~Between~Failure$ (MTBF)
+Mean~Time~To~Failure ($MTTF$)  $+$ Mean~Time~To~Repair ($MTTR$) $=$  Mean~Time~Between~Failure ($MTBF$)
 
 Now, how to calculate the \emph{Availability}~\textemdash~just use data from following variables:
 
 \begin{enumerate}
 
- \item $Mean~Time~To~Failure$ (MTTF)
- \item $Mean~Time~Between~Failure$ (MTBF)
- \item and $Mean~Time~To~Repair$ (MTTR)
+ \item Mean~Time~To~Failure ($MTTF$)
+ \item Mean~Time~Between~Failure ($MTBF$)
+ \item and Mean~Time~To~Repair ($MTTR$)
 \end{enumerate}
 
 Or more importantly, the unavailability of the clock-work due to maintenance causing failures.
@@ -143,7 +144,6 @@ MTTR $/$ MTBF or MTTR $/$ (MTTF $+$ MTTR)
 40 $/$ 140 or 40 $/$  (100  $+$ 40)  $=$  29\%
 \end{quote}
 
-
 Still here?
 
 Here is an another example of the formula for calculating percentage availability: 
@@ -151,8 +151,8 @@ Here is an another example of the formula for calculating percentage availabilit
 \frac{Mean~Time~Between~Failures}{Mean~Time~Between~Failures  +  Mean~Time~To~Repair} \times 100
 \end{equation}
 
-"\textit{Mean Time}" means, statistically, the average time.
+“\textit{Mean Time}” means, statistically, the average time.
 
-"\textit{Mean Time Between Failures}" is literally the average time elapsed from one failure to the next.  Usually people think of it as the average time that something works until it fails and needs to be repaired (again).
+“\textit{Mean Time Between Failures}” is literally the average time elapsed from one failure to the next.  Usually people think of it as the average time that something works until it fails and needs to be repaired (again).
 
-"\textit{Mean Time To Repair}" is the average time that it takes to repair something after a failure.
+“\textit{Mean Time To Repair}” is the average time that it takes to repair something after a failure.
