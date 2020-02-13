@@ -3,11 +3,11 @@
 A damn simple definition dictionary from testitquickly.com
 
 There are two versions of this doc with identical content:
-* [for screen](https://github.com/testitquickly/Software-Testing-Glossary/raw/master/Software%20Testing%20Glossary%20(Alexei%20Lupan).pdf)
-* [for print](https://github.com/testitquickly/Software-Testing-Glossary/raw/print_version/Software%20Testing%20Glossary%20(Alexei%20Lupan).pdf)
+* pdf [for screen](https://github.com/testitquickly/Software-Testing-Glossary/raw/master/Software%20Testing%20Glossary%20(Alexei%20Lupan).pdf) / [bit.ly/2SNogHg](http://bit.ly/2SNogHg)
+* pdf [for print](https://github.com/testitquickly/Software-Testing-Glossary/raw/print_version/Software%20Testing%20Glossary%20(Alexei%20Lupan).pdf) / [bit.ly/3bA88S0](http://bit.ly/3bA88S0)
 
 ## Abstract
-This is not an another ’_Full glossary of terms used in Software Testing_’. I just had to notice my own definition dictionary of some terms, so I did it. 
+This is not an another ’_Full glossary of terms used in Software Testing_’. I just had to notice my own definition dictionary of some terms, so I did it.
 
 English is not my pet language, so any ping about ANY inaccuracy in this doc wil be appreciated. Thank you in advance.
 
@@ -30,5 +30,3 @@ LinkedIn: [testitquickly](https://www.linkedin.com/in/testitquickly/)
 Personal Website: [testitquickly.com](https://testitquickly.com/)
 
 Email: astenix@testitquickly.com
-
-
