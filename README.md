@@ -30,3 +30,5 @@ LinkedIn: [testitquickly](https://www.linkedin.com/in/testitquickly/)
 Personal Website: [testitquickly.com](https://testitquickly.com/)
 
 Email: astenix@testitquickly.com
+
+Project URL: [testitquickly.github.io/Software-Testing-Glossary/](https://testitquickly.github.io/Software-Testing-Glossary/)
